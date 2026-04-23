@@ -4,6 +4,7 @@ from curl_cffi import requests
 import yfinance as yf
 import time
 from datetime import datetime, timedelta
+from pytz import timezone
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -290,7 +291,7 @@ def executar_analise(verbose=True):
         
         ultimo_idx = len(df) - 1
         preco_atual = df.iloc[-1]['Close']
-        ultimo_timestamp = datetime.now()
+        ultimo_timestamp = datetime.now().astimezone(timezone('America/Sao_Paulo'))
         
         if verbose:
             print(f"✅ {len(df)} velas coletadas")
