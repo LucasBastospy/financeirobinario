@@ -290,7 +290,7 @@ def executar_analise(verbose=True):
         
         ultimo_idx = len(df) - 1
         preco_atual = df.iloc[-1]['Close']
-        ultimo_timestamp = df.iloc[-1]['Datetime']
+        ultimo_timestamp = datetime.now()
         
         if verbose:
             print(f"✅ {len(df)} velas coletadas")
