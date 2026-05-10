@@ -4,14 +4,14 @@ import teste
 from teste import executar_analise, PARES
 
 st.set_page_config(
-    page_title="Análise Interativa - teste.py",
+    page_title="Análise Interativa ",
     page_icon="📈",
     layout="wide",
 )
 
-st.title("📊 Front-end Interativo para `teste.py`")
+st.title("📊 Front-end Interativo`")
 st.markdown(
-    "Este painel usa a lógica de `teste.py` para exibir sinalizações de mercado com clareza, sem necessidade de `.env` ou configuração extra."
+    "Este painel usa a lógica desenvolvida por Lucas Bastos para exibir sinalizações de mercado com clareza"
 )
 
 with st.sidebar:
